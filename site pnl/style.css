@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  background: #f2f2f2;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+nav {
+  align-items: center;
+  background-color: #005f99;
+  color: white;
+  border-bottom: 1px solid #004080;
+  display: flex;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logo img {
+  max-height: 40px;
+  margin-right: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  font-size: 18px;
+  margin-right: 16px;
+  position: relative;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+li:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: -5px;
+  left: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #cce7ff;
+}
+
+.content {
+  padding-top: 80px;
+}
+
+.section {
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+}
+
+.section:nth-child(even) .text-content {
+  order: 2;
+}
+
+.section:nth-child(even) img {
+  order: 1;
+}
+
+.text-content {
+  flex: 1;
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.text-content.full {
+  text-align: justify;
+}
+
+img {
+  max-width: 300px;
+  border-radius: 15px;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+footer {
+  background: rgba(0, 95, 153, 0.8);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Estilo do link "Topo" no rodapé */
+footer a[href="#top"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #005f99;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+}
+
+footer a[href="#top"]:hover {
+  background-color: #004080;
+}
+
+
+
+/* Estilo do link "Topo" no rodapé */
+footer a[href="#top"] {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #005f99;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+footer a[href="#top"]:hover {
+  background-color: #004080;
+}

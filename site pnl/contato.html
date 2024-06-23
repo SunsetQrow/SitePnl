@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Contato</title>      
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imgs/icone.jpg" type="image/jpeg" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="style4.css">
+  <script src="comentario.js"></script> <!-- Incluindo o arquivo JavaScript externo -->
+  <style>
+    /* Estilos adicionais para centralizar o formulário */
+    .form-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Altura total da viewport */
+      padding-top: 80px; /* Espaçamento do topo para evitar sobreposição com o menu */
+    }
+
+    .form-content {
+      max-width: 600px;
+      width: 100%;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .form-content form {
+      margin: 0 auto; /* Centraliza o formulário dentro do .form-content */
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-content h1 {
+      text-align: center;
+    }
+
+    .form-content input,
+    .form-content textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .form-content input[type="submit"],
+    .form-content input[type="reset"] {
+      width: auto;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="imgs/icone.jpg" alt="Logo">
+      </a>
+    </div>
+    <ul>
+      <li><a href="historia.html">História</a></li>
+      <li><a href="aplicacao.html">Aplicação</a></li>
+      <li><a href="efeito.html">Efeitos</a></li>
+      <li><a href="profissionais.html">Profissionais</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <section class="main-section">
+      <div class="form-container">
+        <div class="form-content">
+          <h1>Formulário de Contato</h1>
+          <form name="form1" action="confirmaenvio.html" method="post" onsubmit="return validarFormulario()">
+            Nome: <input name="nome" type="text" required><br><br>
+            Email: <input name="email" type="email" required><br><br>
+            Perguntas sobre PNL:<br>
+            <textarea name="perguntas" cols="30" rows="10"></textarea><br><br>
+            <input type="submit" name="enviar" value="Enviar">
+            <input type="reset" name="limpar" value="Limpar">
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Arthur Trindade e Guilherme Marques 2024 - &copy; Todos os direitos reservados</p>
+    <p><a href="#top">Topo</a></p>
+  </footer>
+</body>
+</html>
